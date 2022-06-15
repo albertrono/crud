@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 50px;
+    background-color: #f7f7f7;
+    color: #222222;
+}
+
+input {
+    font-size: 15px;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.header {
+    text-align: center;
+}
+
+.container .wrapper,
+.form form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .wrapper {
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.container .edit-wrapper {
+    justify-content: center;
+}
+
+.form {
+    border: 1px solid #cccccc;
+    flex-basis: 40%;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.form form label {
+    font-weight: bold;
+}
+
+
+.form form [type="text"],
+.form form [type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666666;
+    border-radius: 2px;
+}
+
+.form form [type="text"] {
+    margin-bottom: 5px;
+}
+
+.form form [type="submit"] {
+    margin-top: 10px;
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    background: #0d6efd;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.msg {
+    width: 100%;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 0;
+
+}
+
+.user-list {
+    padding-left: 20px;
+    flex: 1;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    background-color: #f7f7f7;
+}
+
+table th,
+table td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+a.edit,
+a.delete {
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 3px 5px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a.edit {
+    background-color: #0d6efd;
+}
